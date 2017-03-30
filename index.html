@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+(function($) {
+    $(document).ready(function() {
+
+        // BELOW IS THE jQUERY PLUGIN FOR AUTO SCROLLING
+        $('.scroll').click(function() {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+            if (target.length) {
+                $('html,body').animate({
+                    scrollTop: target.offset().top
+                }, 500); // The higher the number, the slower the scroll
+                return false;
+                }
+            }
+        });
+    });
+
+})(jQuery)
+
+
+</script>
+</head>
+<body>
+<div class="home-page">
+    <div class="home-header">
+        <h1 class="home-h1">Swimming</h1>
+    </div>
+
+    <div class="home-tagline">
+        <h3>The best sport.</h3>
+    </div>
+
+    <div class="home-button">
+        <button><a href="#page-2" class="scroll">Why is swimming the best sport?</a></button>
+    </div>
+</div>
+
+
+<!-- PAGE 2 starts! -->
+<a name="page-2"><div class="page-2"></a>
+    <div class="home-header2">
+        <h1 class="home-h2">A few reasons are...</h2>
+    </div>
+
+    <div class="home-tagline2">
+        <h3>First off, it is good for aerobic exercise. Second, it makes you more flexible. Third, it increases your lung capacity, helping asthma. Another reason is reducing diabetes risk. Also, it improves your mental health, such as your mood. Last but not least, you can lose weight.</h3>
+    </div>
+</div>
+
+</body>
+</html>

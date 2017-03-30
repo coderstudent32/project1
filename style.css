@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css?family=Oxygen');
+
+html, body {
+    margin:0;
+    padding:0;
+    height:100%;
+    font-family: 'Oxygen', sans-serif;
+} 
+.home-page {
+    background:url("https://media.giphy.com/media/l3V0mnnGcVblF8bAI/giphy.gif") no-repeat center center fixed;
+    text-align:center;
+      -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: 'Oxygen', sans-serif;
+  height:100%;
+}
+.home-header {
+    color:white;
+    font-size:70px;
+    padding-top:0%;
+}
+.home-tagline {
+    color:white;
+    font-size:35px;
+
+}
+.home-h1 {
+    margin:0;
+}
+button {
+    font-family: 'Oxygen', sans-serif;
+    color:white;
+    border:2px solid lightblue;
+    background:transparent;
+    padding:10px 25px 10px 25px;
+    font-size:15px;
+}
+button:hover {
+    color: white;
+    border:2px solid black;
+    background: lightblue;
+    padding:10px 25px 10px 25px;
+    font-size:15px;
+}
+a:link {
+    text-decoration:none;
+    font-weight:bold;
+    color: white;
+}
+a:visited { 
+    color: white;
+}
+
+.page-2 {
+    background:url("http://www.mrwallpaper.com/wallpapers/pool-sunset-resort.jpg") no-repeat center center fixed;
+    text-align:center;
+        -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: 'Oxygen', sans-serif;
+    height:100%;
+}
+.home-header2 {
+    color:SKYBLUE;
+    font-size:70px;
+    padding:0;
+    margin:0;
+}
+.home-h2 {
+    margin:0;
+}
+.home-tagline2 {
+    color:white;
+    font-size:35px;
+}
